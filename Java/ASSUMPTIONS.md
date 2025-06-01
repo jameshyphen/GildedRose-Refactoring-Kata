@@ -19,3 +19,6 @@
 6. **Conjured Sulfuras**:
    - The spec states that Sulfuras does not degrade in quality.
    - **Assumption**: A Conjured Sulfuras should degrade in quality like a conjured normal item. You cannot conjure legendary items.
+7. **"Full Rewrite not necessary"**:
+   - In the email, it was stated that a full rewrite is not necessary.
+   - **Assumption**: The existing code structure can be used to implement the new features without a complete overhaul. This means a full "rewrite" of the logic inside the function is allowed, but we canot make things backwards incompatible. _(e.g. changing class structure or function signature)_

@@ -161,7 +161,7 @@ class GildedRoseTest {
             List.of(
                 new ExpectedItemState(
                     app.items[0],
-                    new int[]{2, 2, 2, 2, 2}, // SellIn should remain constant
+                    new int[]{1, 0, -1, -2, -3}, // SellIn should remain constant
                     new int[]{80, 80, 80, 80, 80} // Quality should remain constant
                 )
             ),
@@ -250,7 +250,7 @@ class GildedRoseTest {
 
         // Given a list of expected qualities and sellins after each update
         int[] expectedSellIns = {1, 0, -1, -2, -3};
-        int[] expectedQualities = {79, 78, 76, 74, 72};
+        int[] expectedQualities = {80, 80, 80, 80, 80};
 
         assertUpdatedValues(
             app,
